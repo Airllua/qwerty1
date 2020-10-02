@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+
+    setlocale(LC_ALL, "RUS");
+
+    cout << "Введите точку А = ";
+    cin >> a;
+    cout << "Введите точку В = ";
+    cin >> b;
+    cout << "Введите точку С = ";
+    cin >> c;
+
+   
+    int ac = abs(c - a);
+    int bc = abs(c - b);
+    int sum = ac + bc;
+
+    
+
+    cout << "АС = " << ac << endl;
+    cout << "ВС = " << bc << endl;
+    cout << "Сумма двух отрезков = " << sum << endl;
+
+    return 0;
+}

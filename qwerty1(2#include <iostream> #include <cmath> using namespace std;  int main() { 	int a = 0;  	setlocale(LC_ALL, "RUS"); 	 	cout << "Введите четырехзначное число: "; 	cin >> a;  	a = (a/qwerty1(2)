@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int a = 0;
+
+	setlocale(LC_ALL, "RUS");
+	
+	cout << "Введите четырехзначное число: ";
+	cin >> a;
+
+	a = (a / 1000) * 100 + a % 100;
+	cout << "Число без второй цифры: " << a << endl;
+	
+	return 0;
+}

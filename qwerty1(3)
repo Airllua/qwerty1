@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	double x = 43.32, y = -0.54, z, b;
+
+	setlocale(LC_ALL, "RUS");
+
+	z = (pow(cos(3 * (2 + 3)), 2) / 4 - pow(y, 2) * sqrt(x));
+	b = ((pow(x, 3) + y) / pow(sin(z), 2) + x / 5);
+
+	cout << "Функция b = " << b << endl;
+
+	return 0;
+}
